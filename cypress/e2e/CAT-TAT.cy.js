@@ -10,7 +10,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
   it('preenche os campos obrigatórios e envia o formulário', () => {
     const longText = Cypress._.repeat('Estou escrevendo nesse campo!', 10)
     
-    cy.get('#firstName').type('Diego')
+    cy.get('#firstName').type('')
     cy.get('#lastName').type('Cardoso')
     cy.get('#email').type('diego@teste.com')
     cy.get('#open-text-area').type(longText, { delay: 0 })
